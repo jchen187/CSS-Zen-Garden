@@ -1,3 +1,4 @@
+/*
 body {
   background-color: gainsboro;
 }
@@ -33,4 +34,14 @@ aside {
     margin-left:0;
   }
 
+}
+*/
+
+div {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+div:last-child {
+  margin-bottom: 0;
 }
