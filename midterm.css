@@ -1,0 +1,36 @@
+body {
+  background-color: gainsboro;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+  border:1px solid black;
+  width:66%;
+  float:left;
+}
+
+footer {
+  display:none;
+}
+
+aside {
+  border:1px solid black;
+  width:30%;
+  margin-left:67%;
+}
+
+@media all and (width:320px) {
+  body {
+    background-color:orange;
+  }
+
+  .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    width:auto;
+    float:none;
+  }
+
+  aside {
+    width:auto;
+    margin-left:0;
+  }
+
+}
