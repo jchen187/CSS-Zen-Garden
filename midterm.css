@@ -46,14 +46,30 @@ div:last-child {
   margin-bottom: 0;
 }
 
-h1 {
-  display: block;
-  margin: auto;
+header[role=banner] {
+  height: 600px;
+  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1 {
+  /*display: block;*/
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
   font-family: Tahoma, serif;
-  font-size: 30px;
+  font-size: 48px;
+  line-height: 600px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rbga(0,0,0,0.2);
 }
 
 h2, h3 {
+  border: 1px solid black;
+  display: block;
   margin-bottom: 40px;
   font-family: Tahoma, serif;
   font-size: 30px;
