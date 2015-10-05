@@ -37,15 +37,48 @@ aside {
 }
 */
 
-
-
+body {
+  font-family: Tahoma, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 15px;
+  background-color: #CAE1FF;
+}
 div {
   max-width: 960px;
   margin: 0 auto;
 }
 
+/* ====================================
+        MAIN BACKGROUND
+==================================== */
+
+header[role=banner] {
+  height: 400px;
+  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1 {
+  /*display: block;*/
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  font-family: Tahoma, serif;
+  font-size: 48px;
+  line-height: 400px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rbga(0,0,0,0.2);
+}
+
+/* ====================================
+        PAPER WITH A FOLD
+==================================== */
+
 div.summary {
   position: relative;
+  margin-top: 80px;
   margin-bottom: 40px;
   padding: 40px;
   background-color: #96a5be;
@@ -79,57 +112,15 @@ div.summary::after{
  border-top: solid 20px transparent;
 }
 
-div.summary-radius {
-  border-radius: 10px;
-}
-div.summary-radius:after {
-  border-radius: 0 0 0 10px;
-}
-
 div:last-child {
   margin-bottom: 0;
 }
 
-header[role=banner] {
-  height: 600px;
-  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-header h1 {
-  /*display: block;*/
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0 auto;
-  font-family: Tahoma, serif;
-  font-size: 48px;
-  /*line-height: 600px;*/
-  text-align: center;*/
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rbga(0,0,0,0.2);
-}
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 15px;
-}
-
-
-.resources {
-  height: 600px;
-  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
 
 h2, h3 {
-
   text-align: center;
   border: 1px solid black;
-  display: inline-block;
+  display: block;
   margin-bottom: 40px;
   font-family: Tahoma, serif;
   font-size: 30px;
@@ -171,11 +162,14 @@ p:last-child{
   margin-bottom: 0;
 }
 
+/* ===========================================================
+                    TILES FOR LINKS
+=========================================================== */
 
-div.design-archives ul {
+div.design-selection ul, div.design-archives ul {
   list-style: none;
 }
-div.design-archives li{
+div.design-selection li, div.design-archives li{
   display: block;
   overflow:hidden;
   /*font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
@@ -185,7 +179,7 @@ div.design-archives li{
   -o-transition: background 0.3s;
   transition: background 0.3s;
 }
-div.design-archives a{
+div.design-selection a, div.design-archives a{
   display: block;
   padding: 20px;
   color: #fff;
@@ -194,7 +188,7 @@ div.design-archives a{
   -o-transition: background 0.3s, -o-transform 0.3s;
   transition: background 0.3s, transform 0.3s;
 }
-div.design-archives a:hover{
+div.design-selection a:hover, div.design-archives a:hover{
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   -ms-transform: translateX(20px);
@@ -202,6 +196,56 @@ div.design-archives a:hover{
   transform: translateX(20px);
 }
 
+div.design-selection li:first-child {
+  background-color: #28aadc;
+}
+div.design-selection li:first-child:hover{
+  background-color: #166888;
+}
+div.design-selection li:nth-child(2){
+  background-color: #0a8cbe;
+}
+div.design-selection li:nth-child(2):hover{
+  background-color: #05455d;
+}
+div.design-selection li:nth-child(3){
+  background-color: #006ea0;
+}
+div.design-selection li:nth-child(3):hover{
+  background-color: #00283a;
+}
+div.design-selection li:nth-child(4){
+  background-color: #006478;
+}
+div.design-selection li:nth-child(4):hover{
+  background-color: #000f12;
+}
+div.design-selection li:nth-child(5){
+  background-color: #005a5a;
+}
+div.design-selection li:nth-child(5):hover{
+  background-color: black;
+}
+div.design-selection li:nth-child(6){
+  background-color: #007864;
+}
+div.design-selection li:nth-child(6):hover{
+  background-color: #00120f;
+}
+div.design-selection li:nth-child(7){
+  background-color: #0aa06e;
+}
+div.design-selection li:nth-child(7):hover{
+  background-color: #04402c;
+}
+div.design-selection li:nth-child(8){
+  background-color: #0abe8c;
+}
+div.design-selection li:nth-child(8):hover{
+  background-color: #055d45;
+}
+
+/*=========================*/
 div.design-archives li.next, div.design-archives li.next a {
   background-color: #28aadc;
 }
@@ -216,6 +260,8 @@ div.design-archives li.viewall:hover, div.design-archives li.viewall a:hover {
   background-color: #05455d;
 }
 /* smoother transitions */
+div.design-selection li,
+div.design-selection a,
 div.design-archives li,
 div.design-archives a {
   -webkit-transform: translate3d(0, 0, 0);
@@ -226,23 +272,29 @@ div.design-archives a {
 }
 
 @media all and (min-width: 480px) {
-  div.design-archives nav {
+  h1 {
+    font-size: 96px;
+  }
+  div.design-selection nav, div.design-archives nav {
     display: block;
   }
-  div.design-archives nav li {
+  div.design-selection nav li, div.design-archives nav li {
     width: 50%;
     float: left;
   }
 }
 @media all and (min-width: 768px) {
-  div.design-archives nav li {
+  h1 {
+    font-size: 120px;
+  }
+  div.design-selection nav li, div.design-archives nav li {
     width: 25%;
   }
-  div.design-archives nav a {
+  div.design-selection nav a, div.design-archives nav a {
     text-align: center;
     padding: 60px 20px 20px 20px;
   }
-  div.design-archives nav a:hover {
+  div.design-selection nav a:hover, div.design-archives nav a:hover {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -257,30 +309,21 @@ div.design-archives a {
 }
 
 @media all and (min-width: 1024px) {
-  div.design-archives nav li {
+  h1 {
+    font-size: 160px;
+  }
+  div.design-selection nav li, div.design-archives nav li {
     overflow: visible;
     width: 12.5%;
   }
-  div.design-archives nav a {
+  div.design-selection nav a, div.design-archives nav a {
     padding: 80px 20px 20px 20px;
   }
-  div.design-archives nav a:hover {
+  div.design-selection nav a:hover, div.design-archives nav a:hover {
     -webkit-transform: translateY(20px);
     -moz-transform: translateY(20px);
     -ms-transform: translateY(20px);
     -o-transform: translateY(20px);
     transform: translateY(20px);
-  }
-}
-
-@media all and (min-width: 600px){
-  h1 {
-    font-size: 96px;
-  }
-}
-
-@media all and (min-width: 960px){
-  h1 {
-    font-size: 160px;
   }
 }
