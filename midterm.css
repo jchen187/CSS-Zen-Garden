@@ -40,7 +40,7 @@ aside {
 body {
   font-family: Tahoma, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 15px;
-  background-color: #CAE1FF;
+  /*background-color: #CAE1FF;*/
 }
 div {
   max-width: 960px;
@@ -81,7 +81,7 @@ div.summary {
   margin-top: 80px;
   margin-bottom: 40px;
   padding: 40px;
-  background-color: #96a5be;
+  background-color: #B0C4DE;
 }
 
 div.summary:last-child {
@@ -91,13 +91,13 @@ div.summary:last-child {
 div.summary::before, div.summary::after{
   display: block;
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 0;
+  height: 0;
   top: 0;
   right: 0;
   content: "";
 }
-
+/*Triangle pointing NE*/
 div.summary::before{
   border-top: solid 20px #fff;
   border-right: solid 20px #fff;
@@ -105,11 +105,21 @@ div.summary::before{
   border-bottom: solid 20px transparent;
 }
 
+/*Triangle pointing SW*/
 div.summary::after{
   border-bottom: solid 20px #5b7093;
- border-left: solid 20px #5b7093;
- border-right: solid 20px transparent;
- border-top: solid 20px transparent;
+  border-left: solid 20px #5b7093;
+  border-right: solid 20px transparent;
+  border-top: solid 20px transparent;
+}
+
+div.summary {
+  border-radius: 10px;
+  overflow: hidden;
+}
+div.summary:after {
+  border-radius: 0 0 0 10px;
+   box-shadow: -1px 1px 5px #212835;
 }
 
 div:last-child {
