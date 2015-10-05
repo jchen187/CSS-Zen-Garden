@@ -80,6 +80,18 @@ header h1 {
 }
 
 /* ====================================
+        testing
+==================================== */
+header::after{
+  border: 1px solid blue;
+  width:100px;
+  height: 400px;
+  background-color: lightblue;
+  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
+
+}
+
+/* ====================================
         PAPER WITH A FOLD
 ==================================== */
 
@@ -137,7 +149,7 @@ div:last-child {
 h2, h3 {
   text-align: center;
   border: 1px solid black;
-  display: block;
+  display: inline-block;
 
   margin-bottom: 40px;
   font-family: Tahoma, serif;
@@ -148,7 +160,7 @@ h2, h3 {
 }
 
 h2:after, h3:after{
-  display: block;
+  display: inline-block;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -164,7 +176,7 @@ h2:hover, h3:hover{
 }
 
 h2:hover:after, h3:hover:after{
-  /*width:100%;*/
+  width:100%;
 }
 
 a {
@@ -180,7 +192,46 @@ p:last-child{
   margin-bottom: 0;
 }
 
+/* ===========================================================
+                    MAIN SUPPORTING
+=========================================================== */
 
+div.main.supporting {
+  display: flex;
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  flex-flow: row || wrap;
+}
+
+div.main.supporting div{
+  flex: 1;
+}
+
+div.main.supporting div.explanation {
+  background-color: gray;
+  order:1;
+  flex-grow: 1;
+}
+
+div.main.supporting div.requirements {
+  order:2;
+  flex-grow: 3;
+}
+
+div.main.supporting div.participation {
+  order:3;
+  flex-grow: 1;
+}
+
+div.main.supporting div.benefits {
+  order:4;
+  flex-grow: 1;
+}
+
+div.main.supporting footer{
+  order:5;
+
+}
 /* ===========================================================
                     TILES FOR LINKS
 =========================================================== */
