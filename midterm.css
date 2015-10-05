@@ -51,9 +51,16 @@ div {
         MAIN BACKGROUND
 ==================================== */
 
+header {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header[role=banner] {
   height: 400px;
-  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
+  background-color: lightblue;
+  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -66,8 +73,8 @@ header h1 {
   margin: 0 auto;
   font-family: Tahoma, serif;
   font-size: 48px;
-  line-height: 400px;
-  text-align: center;
+  /*line-height: 400px;*/
+  /*text-align: center;*/
   text-transform: uppercase;
   text-shadow: 0 0 10px rbga(0,0,0,0.2);
 }
@@ -131,6 +138,7 @@ h2, h3 {
   text-align: center;
   border: 1px solid black;
   display: block;
+
   margin-bottom: 40px;
   font-family: Tahoma, serif;
   font-size: 30px;
@@ -156,7 +164,7 @@ h2:hover, h3:hover{
 }
 
 h2:hover:after, h3:hover:after{
-  width:100%;
+  /*width:100%;*/
 }
 
 a {
@@ -171,6 +179,7 @@ p {
 p:last-child{
   margin-bottom: 0;
 }
+
 
 /* ===========================================================
                     TILES FOR LINKS
