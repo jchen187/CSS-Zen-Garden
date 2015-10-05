@@ -37,6 +37,8 @@ aside {
 }
 */
 
+
+
 div {
   max-width: 960px;
   margin: 0 auto;
@@ -61,15 +63,31 @@ header h1 {
   margin: 0 auto;
   font-family: Tahoma, serif;
   font-size: 48px;
-  line-height: 600px;
-  text-align: center;
+  /*line-height: 600px;*/
+  text-align: center;*/
   text-transform: uppercase;
   text-shadow: 0 0 10px rbga(0,0,0,0.2);
 }
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 15px;
+}
+
+
+.resources {
+  height: 600px;
+  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 h2, h3 {
+
+  text-align: center;
   border: 1px solid black;
-  display: block;
+  display: inline-block;
   margin-bottom: 40px;
   font-family: Tahoma, serif;
   font-size: 30px;
@@ -98,6 +116,9 @@ h2:hover:after, h3:hover:after{
   width:100%;
 }
 
+a {
+  text-decoration: none;
+}
 p {
   margin-bottom: 40px;
   font-size: 16px;
@@ -106,4 +127,125 @@ p {
 
 p:last-child{
   margin-bottom: 0;
+}
+
+/*#design-archives nav[role=navigation] {
+  border:1px solid blue;
+  display:none;
+}
+
+#design-archives nav[role=navigation].open {
+  display:block;
+}*/
+div.design-archives ul {
+  list-style: none;
+}
+div.design-archives li{
+  display: block;
+  overflow:hidden;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-shadow: -1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+div.design-archives a{
+  display: block;
+  padding: 20px;
+  color: #fff;
+  -webkit-transition: background 0.3s, -webkit-transform 0.3s;
+  -moz-transition: background 0.3s, -moz-transform 0.3s;
+  -o-transition: background 0.3s, -o-transform 0.3s;
+  transition: background 0.3s, transform 0.3s;
+}
+div.design-archives a:hover{
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+div.design-archives li.next, div.design-archives li.next a {
+  background-color: #28aadc;
+}
+div.design-archives li.next:hover, div.design-archives li.next a:hover {
+  background-color: #166888;
+}
+
+div.design-archives li.viewall, div.design-archives li.viewall a {
+  background-color: #0a8cbe;
+}
+div.design-archives li.viewall:hover, div.design-archives li.viewall a:hover {
+  background-color: #05455d;
+}
+/* smoother transitions */
+div.design-archives li,
+div.design-archives a {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media all and (min-width: 480px) {
+  div.design-archives nav {
+    display: block;
+  }
+  div.design-archives nav li {
+    width: 50%;
+    float: left;
+  }
+}
+@media all and (min-width: 768px) {
+  div.design-archives nav li {
+    width: 25%;
+  }
+  div.design-archives nav a {
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+  }
+  div.design-archives nav a:hover {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  div.design-archives nav li {
+    overflow: visible;
+    width: 12.5%;
+  }
+  div.design-archives nav a {
+    padding: 80px 20px 20px 20px;
+  }
+  div.design-archives nav a:hover {
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@media all and (min-width: 600px){
+  h1 {
+    font-size: 96px;
+  }
+}
+
+@media all and (min-width: 960px){
+  h1 {
+    font-size: 160px;
+  }
 }
