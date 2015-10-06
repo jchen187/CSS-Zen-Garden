@@ -52,22 +52,34 @@ div {
 ==================================== */
 
 header {
+  margin-top: 30px;
   display:flex;
   flex-direction: column;
   justify-content: center;
 }
 
 header[role=banner] {
-  height: 400px;
+  /*height: 400px;
+  background-color: lightblue;
+  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;*/
+}
+
+header h1 {
+  padding-top: 150px;
+  width:90%;
+
+  height: 200px;
+  text-align: center;
   background-color: lightblue;
   /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-header h1 {
   /*display: block;*/
   color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
@@ -82,12 +94,13 @@ header h1 {
 /* ====================================
         testing
 ==================================== */
-header::after{
+header:after{
+  display: block;
   border: 1px solid blue;
   width:100px;
   height: 400px;
-  background-color: lightblue;
-  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
+  background-color: red;
+
 
 }
 
@@ -149,7 +162,7 @@ div:last-child {
 h2, h3 {
   text-align: center;
   border: 1px solid black;
-  display: inline-block;
+  display: block;
 
   margin-bottom: 40px;
   font-family: Tahoma, serif;
@@ -160,7 +173,7 @@ h2, h3 {
 }
 
 h2:after, h3:after{
-  display: inline-block;
+  display: block;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -200,32 +213,35 @@ div.main.supporting {
   display: flex;
   /*flex-direction: row;
   flex-wrap: wrap;*/
-  flex-flow: row || wrap;
+  flex-flow: row wrap;
 }
 
 div.main.supporting div{
   flex: 1;
+  flex-grow: 1;
+  flex-basis: 200px;
 }
 
 div.main.supporting div.explanation {
-  background-color: gray;
   order:1;
-  flex-grow: 1;
+  /*width:200px;*/
+  /*flex-grow: 1;*/
 }
 
 div.main.supporting div.requirements {
   order:2;
-  flex-grow: 3;
+  flex-basis: 600px;
+  /*flex-grow: 3;*/
 }
 
 div.main.supporting div.participation {
   order:3;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 
 div.main.supporting div.benefits {
   order:4;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 
 div.main.supporting footer{
@@ -236,6 +252,12 @@ div.main.supporting footer{
                     TILES FOR LINKS
 =========================================================== */
 
+li {
+  text-align: center;
+}
+div.design-selection li a:first-child{
+  text-transform: uppercase;
+}
 div.design-selection ul, div.design-archives ul {
   list-style: none;
 }
@@ -360,7 +382,11 @@ div.design-archives a {
   div.design-selection nav li, div.design-archives nav li {
     width: 25%;
   }
-  div.design-selection nav a, div.design-archives nav a {
+  div.design-selection nav a{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+  }
+  div.design-archives nav a {
     text-align: center;
     padding: 60px 20px 20px 20px;
   }
@@ -386,7 +412,11 @@ div.design-archives a {
     overflow: visible;
     width: 12.5%;
   }
-  div.design-selection nav a, div.design-archives nav a {
+  div.design-selection nav a{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+  }
+  div.design-archives nav a {
     padding: 80px 20px 20px 20px;
   }
   div.design-selection nav a:hover, div.design-archives nav a:hover {
