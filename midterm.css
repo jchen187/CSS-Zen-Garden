@@ -36,6 +36,9 @@ aside {
 
 }
 */
+/*check urban bound*/
+/*Use this for google font*/
+@import url('');
 
 body {
   font-family: Tahoma, Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -43,8 +46,24 @@ body {
   /*background-color: #CAE1FF;*/
 }
 div {
-  max-width: 960px;
+  /*max-width: 960px;*/
   margin: 0 auto;
+}
+
+#zen-summary{
+  background-color:
+}
+
+#zen-explanation{
+  background-color: #36424a;
+}
+
+#zen-benefits{
+  background-color: #dee1e6;
+}
+
+footer {
+  background-color: #36424a;
 }
 
 /* ====================================
@@ -158,6 +177,9 @@ div:last-child {
   margin-bottom: 0;
 }
 
+/*
+  HOVERING LINK
+*/
 
 h2, h3 {
   text-align: center;
@@ -172,38 +194,45 @@ h2, h3 {
   color: #ff3296;
 }
 
-h2:after, h3:after{
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 0px;
-  height: 10px;
-  background-color: #98004a;
-  content:"";
-  transition: width 0.2s;
-}
-
-h2:hover, h3:hover{
-  color: #98004a;
-}
-
-h2:hover:after, h3:hover:after{
-  width:100%;
-}
-
 a {
   text-decoration: none;
 }
 p {
   margin-bottom: 40px;
   font-size: 16px;
-  font-weight: 300;
 }
 
 p:last-child{
   margin-bottom: 0;
 }
+
+p a{
+  transition: all 0.2s;
+  position: relative;
+  color: #ff3296;
+}
+
+p a:after, p a:after{
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background-color: #98004a;
+  content:"";
+  transition: width 0.2s;
+}
+
+p a:hover, p a:hover{
+  color: #98004a;
+}
+
+p a:hover:after, p a:hover:after{
+  width:100%;
+}
+
+
 
 /* ===========================================================
                     MAIN SUPPORTING
