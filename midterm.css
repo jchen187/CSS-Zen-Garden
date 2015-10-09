@@ -38,13 +38,16 @@ aside {
 */
 /*check urban bound*/
 /*Use this for google font*/
-@import url('');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
 footer {
   display:none;
 }
+h1{
+  font-family: "Dosis";
+}
 body {
-  font-family: Tahoma, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Dosis", Tahoma, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -91,6 +94,7 @@ header[role=banner] {
 
 header h1 {
   position: fixed;
+
   /*Set the margin and padding to 0 to override Chromes set values*/
   margin:0;
   padding:0;
@@ -106,7 +110,7 @@ header h1 {
   /*display: block;*/
   color: rgba(255, 255, 255, 0.8);
 
-  font-family: Tahoma, serif;
+  font-family: "Dosis",Tahoma,serif;
   font-size: 48px;
   /*line-height: 400px;*/
   /*text-align: center;*/
@@ -118,11 +122,10 @@ header h2 {
 
   padding-top: 150px;
   width:90%;
-
   height: 200px;
   text-align: center;
   background-color: lightblue;
-  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
+  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
