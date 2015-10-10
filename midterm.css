@@ -94,16 +94,24 @@ li {
   list-style: none;
 }
 
-#design-selection li{
+#design-selection ul{
+  margin: 0 auto;
   border: 1px dashed black;
-  position: relative;
-  /*float: left;*/
+  width:90%;
   display: flex;
-  padding-bottom: 25%;
-  width: 25%;
+  flex-flow: row wrap;
+  align-content: center;
+
+}
+#design-selection li{
+  border: 1px dashed pink;
+  /*the padding is 10% of ul, the containing element*/
+  padding-bottom: 10%;
+  width: 24%;
   text-align: center;
 }
 
+/*
 .design-name,
 .designer-name {
   position: absolute;
@@ -130,7 +138,7 @@ li {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
-/*
+
 #design-selection li .design-name {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
