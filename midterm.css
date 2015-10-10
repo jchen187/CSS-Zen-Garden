@@ -126,18 +126,16 @@ div.wrapper{
 }
 
 /*how come when only one it is weird*/
-#design-selection a.design-name
-#design-selection a.designer-name{
-  position:absolute;
+a.design-name, a.designer-name{
+  position: absolute;
   border: 1px solid black;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
-#design-selection a.design-name
-#design-selection a.designer-name{
+a.design-name, a.designer-name{
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
