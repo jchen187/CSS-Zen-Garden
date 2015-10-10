@@ -98,10 +98,6 @@ li {
   list-style: none;
 }
 
-div.wrapper{
-
-}
-
 #design-selection ul{
   margin: 0 auto;
   border: 1px dashed black;
@@ -109,41 +105,56 @@ div.wrapper{
   display: flex;
   flex-flow: row wrap;
   align-content: center;
+  align-items: center;
+  /*Need to center it a bit*/
+  padding-right: 20px;
 }
 
 #design-selection li{
-  border: 1px solid blue;
-  margin: 1px 1px 1px 1px;
+  /*border: 1px solid blue;*/
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 2px;
   position:relative;
 
   /*the padding is 10% of ul, the containing element*/
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   width: 24%;
   text-align: center;
-
+  height: 20px;
 
 }
 
 /*how come when only one it is weird*/
 a.design-name, a.designer-name{
+
+  /*You need absolute to tell the links to take up the entire length and width of parent*/
   position: absolute;
-  border: 1px solid black;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
+/*Putting space from the top to the words*/
+a.design-name::before, a.designer-name::before{
+  content:"\a\a\a";
+  white-space: pre;
+}
+
+
+
 a.design-name, a.designer-name{
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.5s;
+          transition: transform 0.5s;
 }
 
 
 a.design-name{
+  text-transform: uppercase;
+  color:white;
   background-color: #ff5078;
 }
 
