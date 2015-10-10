@@ -1,68 +1,96 @@
-/*
-body {
-  background-color: gainsboro;
-}
-
-.summary, .preamble, .explanation, .participation, .benefits, .requirements {
-  border:1px solid black;
-  width:66%;
-  float:left;
-}
-
-footer {
-  display:none;
-}
-
-aside {
-  border:1px solid black;
-  width:30%;
-  margin-left:67%;
-}
-
-@media all and (width:320px) {
-  body {
-    background-color:orange;
-  }
-
-  .summary, .preamble, .explanation, .participation, .benefits, .requirements {
-    width:auto;
-    float:none;
-  }
-
-  aside {
-    width:auto;
-    margin-left:0;
-  }
-
-}
-*/
-/*check urban bound*/
-/*Use this for google font*/
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
-h1{
-  font-family: "Dosis";
-}
 body {
   font-family: "Dosis", Tahoma, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 15px;
   margin: 0;
   padding: 0;
   color: #70797c;
-  /*background-color: #CAE1FF;*/
 }
-div {
-  /*max-width: 960px;*/
+
+/* ====================================
+                TOP
+==================================== */
+
+header[role=banner] h1 {
+  position: fixed;
+
+  /*Set the margin and padding to 0 to override Chromes set values*/
+  margin:0;
+  padding:0;
+  width:100%;
+  z-index:1;
+  text-align: center;
+  background-color: #01aff0;
+  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*display: block;*/
+  color: rgba(255, 255, 255, 0.8);
+
+  font-family: "Dosis",Tahoma,serif;
+  font-size: 48px;
+  /*line-height: 400px;*/
+  /*text-align: center;*/
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rbga(0,0,0,0.2);
+}
+
+header h2 {
+  padding-top: 150px;
+  width:90%;
+  height: 200px;
+  text-align: center;
+  background-image: url("background.jpg");
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
+  font-family: Tahoma, serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rbga(0,0,0,0.2);
 }
 
 #zen-summary{
   background-color:
 }
 
+/* ====================================
+              MAIN
+==================================== */
+
 #zen-supporting{
-  width:90%;
+  width:100%;
   border: 1px solid blue;
+}
+
+h3 {
+  text-align: center;
+  border: 1px solid black;
+  display: block;
+  color: black;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  font-family: Tahoma, serif;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  /*padding: 0 40px 40px 40px;*/
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 20px;
+}
+div p:last-child{
+  padding-bottom: 40px;
 }
 
 #zen-explanation{
@@ -89,6 +117,14 @@ footer {
   display:none;
   background-color: #36424a;
 }
+
+#design-selection{
+  background-color: #36424a;
+}
+#design-selection h3{
+  color: #fff;
+}
+
 
 /* ====================================
         CARD DESIGN
@@ -125,9 +161,7 @@ li {
 
 }
 
-/*how come when only one it is weird*/
 a.design-name, a.designer-name{
-
   /*You need absolute to tell the links to take up the entire length and width of parent*/
   position: absolute;
   top: 0;
@@ -142,8 +176,6 @@ a.design-name::before, a.designer-name::before{
   white-space: pre;
 }
 
-
-
 a.design-name, a.designer-name{
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -151,16 +183,15 @@ a.design-name, a.designer-name{
           transition: transform 0.5s;
 }
 
-
 a.design-name{
   text-transform: uppercase;
-  color:white;
+  color:#dee1e6;
   background-color: #ff5078;
 }
 
 a.designer-name {
-  color:white;
-  background-color: #1e1e1e;
+  color:#dee1e6;
+  background-color: #70797c;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
@@ -175,134 +206,9 @@ li:hover a.designer-name {
           transform: rotateY(0);
 }
 
-
-
-/*
-.design-name,
-.designer-name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
-}
-/*
-.design-name,
-.designer-name {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
-}
-
-.design-name {
-  background-color: #ff5078;
-}
-
-.designer-name {
-  background-color: #1e1e1e;
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-#design-selection li .design-name {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-#design-selection li .designer-name {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-*/
-/* ====================================
-        MAIN BACKGROUND
-==================================== */
-
-header[role=banner] h1 {
-  position: fixed;
-
-  /*Set the margin and padding to 0 to override Chromes set values*/
-  margin:0;
-  padding:0;
-  width:100%;
-  z-index:1;
-  text-align: center;
-  background-color: #01aff0;
-  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  /*display: block;*/
-  color: rgba(255, 255, 255, 0.8);
-
-  font-family: "Dosis",Tahoma,serif;
-  font-size: 48px;
-  /*line-height: 400px;*/
-  /*text-align: center;*/
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rbga(0,0,0,0.2);
-}
-
-header h2 {
-
-  padding-top: 150px;
-  width:90%;
-  height: 200px;
-  text-align: center;
-  /*background-color: lightblue;*/
-  background-image: url("background.jpg");
-  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
-  background-position: 50% 80%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  /*display: block;*/
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0 auto;
-  font-family: Tahoma, serif;
-  font-size: 48px;
-  /*line-height: 400px;*/
-  /*text-align: center;*/
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rbga(0,0,0,0.2);
-}
-
-h3 {
-  text-align: center;
-  border: 1px solid black;
-  display: block;
-  color: black;
-  padding-top: 40px;
-  margin-bottom: 40px;
-  font-family: Tahoma, serif;
-  font-size: 30px;
-
-}
-
 /* ====================================
         HOVERING OVER LINKS
 ==================================== */
-
-a {
-  text-decoration: none;
-}
-p {
-  /*padding: 0 40px 40px 40px;*/
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: 20px;
-}
-div p:last-child{
-  padding-bottom: 40px;
-}
-
-
 p a{
   transition: all 0.2s;
   position: relative;
