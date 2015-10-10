@@ -97,7 +97,8 @@ li {
 #design-selection li{
   border: 1px dashed black;
   position: relative;
-  float: left;
+  /*float: left;*/
+  display: flex;
   padding-bottom: 25%;
   width: 25%;
   text-align: center;
@@ -129,7 +130,7 @@ li {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
-
+/*
 #design-selection li .design-name {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
@@ -139,6 +140,7 @@ li {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
 }
+*/
 /* ====================================
         MAIN BACKGROUND
 ==================================== */
@@ -175,9 +177,10 @@ header h2 {
   width:90%;
   height: 200px;
   text-align: center;
-  background-color: lightblue;
-  background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");
-  background-position: 50% 50%;
+  /*background-color: lightblue;*/
+  background-image: url("background.jpg");
+  /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
+  background-position: 50% 80%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -197,6 +200,7 @@ h3 {
   border: 1px solid black;
   display: block;
   color: black;
+  padding-top: 40px;
   margin-bottom: 40px;
   font-family: Tahoma, serif;
   font-size: 30px;
@@ -217,7 +221,7 @@ p {
   font-size: 20px;
 }
 div p:last-child{
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 
