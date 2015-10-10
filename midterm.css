@@ -8,6 +8,11 @@ body {
   color: #70797c;
 }
 
+div div{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /* ====================================
                 TOP
 ==================================== */
@@ -50,7 +55,6 @@ header h2 {
   background-size: cover;
   color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
-  font-family: Tahoma, serif;
   font-size: 48px;
   text-transform: uppercase;
   text-shadow: 0 0 10px rbga(0,0,0,0.2);
@@ -66,17 +70,15 @@ header h2 {
 
 #zen-supporting{
   width:100%;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 h3 {
   text-align: center;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   display: block;
   color: black;
-  padding-top: 40px;
-  margin-bottom: 40px;
-  font-family: Tahoma, serif;
+  margin-bottom: 20px;
   font-size: 30px;
 }
 
@@ -89,9 +91,9 @@ p {
   margin-right: 40px;
   font-size: 20px;
 }
-div p:last-child{
+/*div p:last-child{
   padding-bottom: 40px;
-}
+}*/
 
 #zen-explanation{
   background-color: #36424a;
@@ -118,13 +120,42 @@ footer {
   background-color: #36424a;
 }
 
+/* ====================================
+        WAS SIDEBAR BUT I AM PUTTING AT BOTTOM
+==================================== */
+div.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 #design-selection{
+  /*min-width: 960px;*/
+  flex-basis: 100%;
   background-color: #36424a;
 }
 #design-selection h3{
   color: #fff;
 }
 
+#design-archives{
+  background-color:#2b2b2b;
+  flex-basis: 30%;
+}
+#design-archives h3{
+  color: #00afef;
+}
+
+#zen-resources{
+  background-color:#2b2b2b;
+  flex-basis: 70%;
+}
+#zen-resources h3{
+  color: #00afef;
+}
+
+div.wrapper a{
+  color:white;
+}
 
 /* ====================================
         CARD DESIGN
@@ -185,7 +216,7 @@ a.design-name, a.designer-name{
 
 a.design-name{
   text-transform: uppercase;
-  color:#dee1e6;
+  color:white;
   background-color: #ff5078;
 }
 
