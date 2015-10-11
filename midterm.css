@@ -13,6 +13,7 @@ div div{
   padding-bottom: 20px;
 }
 
+
 /* ====================================
                 TOP
 ==================================== */
@@ -24,7 +25,7 @@ header[role=banner] h1 {
   margin:0;
   padding:0;
   width:100%;
-  z-index:1;
+  z-index:10;
   text-align: center;
   background-color: #01aff0;
   /*background-image: url("http://cache23.fansshare.com/photos/background/textures-wallpapers-cool-1234374438.jpg");*/
@@ -45,7 +46,7 @@ header[role=banner] h1 {
 
 header h2 {
   padding-top: 150px;
-  width:90%;
+  width:100%;
   height: 200px;
   text-align: center;
   background-image: url("background.jpg");
@@ -61,14 +62,42 @@ header h2 {
 }
 
 #zen-summary{
-  background-color:
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:#36424a;
+  position: relative;
+}
+#zen-summary p{
+  color: #fff;
+}
+#zen-summary::after{
+  /*border: 1px solid black;*/
+  content: url("up.png");
+  position:absolute;
+  bottom:-110px;
+  text-align: center;
+  width:100%;
+}
+
+#zen-preamble{
+  /*background-color: skyblue;*/
+  position:relative;
+  z-index: 1;
 }
 
 /* ====================================
               MAIN
 ==================================== */
+#zen-supporting::before{
+  content: url("down.png");
+  position:absolute;
+  top:-90px;
+  text-align: center;
+  width:100%;
+}
 
 #zen-supporting{
+  position:relative;
   width:100%;
   /*border: 1px solid blue;*/
 }
@@ -126,6 +155,7 @@ footer {
 div.wrapper {
   display: flex;
   flex-flow: row wrap;
+  padding-bottom: 0;
 }
 
 #design-selection{
@@ -139,18 +169,30 @@ div.wrapper {
 
 #design-archives{
   background-color:#2b2b2b;
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 #design-archives h3{
   color: #00afef;
 }
+#design-archives li{
+  text-align: center;
+}
 
 #zen-resources{
   background-color:#2b2b2b;
-  flex-basis: 70%;
+  flex-basis: 60%;
 }
 #zen-resources h3{
+  border: 1px solid white;
+  text-align: left;
+  position: relative;
+  left:40%;
   color: #00afef;
+}
+#zen-resources li{
+  border: 1px solid white;
+  position: relative;
+  left:40%;
 }
 
 div.wrapper a{
