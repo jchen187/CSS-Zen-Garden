@@ -171,7 +171,6 @@ footer {
 ==================================== */
 div.wrapper {
   display: flex;
-  flex-flow: row wrap;
   padding-bottom: 0;
 }
 
@@ -186,34 +185,92 @@ div.wrapper {
 
 #design-archives{
   background-color:#2b2b2b;
-  flex-basis: 40%;
 }
 #design-archives h3{
   color: #00afef;
 }
-#design-archives li{
-  text-align: center;
-}
 
 #zen-resources{
   background-color:#2b2b2b;
-  flex-basis: 60%;
 }
 #zen-resources h3{
-  border: 1px solid white;
-  text-align: left;
-  position: relative;
-  left:40%;
   color: #00afef;
 }
-#zen-resources li{
-  border: 1px solid white;
-  position: relative;
-  left:40%;
+
+@media all and (min-width:180px){
+  div.wrapper {
+    flex-flow: column;
+  }
+  #design-archives{
+    flex-basis: 100%;
+  }
+  #design-archives h3{
+    text-align: center;
+  }
+  #design-archives li{
+    position: relative;
+    left: 30%;
+    text-align: left;
+  }
+  #zen-resources{
+    flex-basis: 100%;
+  }
+  #zen-resources h3{
+    text-align: center;
+  }
+  #zen-resources li{
+    position: relative;
+    left: 30%;
+    text-align: left;
+  }
 }
 
-div.wrapper a{
+@media all and (min-width:520px){
+  div.wrapper {
+    flex-flow: row wrap;
+  }
+  #design-archives{
+    background-color:#2b2b2b;
+    flex-basis: 50%;
+  }
+  #design-archives h3{
+    text-align: center;
+    /*position: relative;*/
+    /*left:20%;*/
+    color: #00afef;
+  }
+  #design-archives li{
+    /*position: relative;*/
+    /*left:10%;*/
+  }
+
+  #zen-resources{
+    background-color:#2b2b2b;
+    flex-basis: 50%;
+    /*border: 1px solid white;*/
+  }
+  #zen-resources h3{
+    text-align: center;
+    /*border: 1px solid white;*/
+    /*position: relative;*/
+    /*right:20%;*/
+    color: #00afef;
+  }
+  #zen-resources li{
+    text-align: left;
+    /*border: 1px solid white;*/
+    /*position: relative;*/
+    /*right:20%;*/
+  }
+}
+
+#design-archives a, #zen-resources a{
   color:white;
+  transition: color 0.5s;
+}
+
+#design-archives a:hover, #zen-resources a:hover{
+  color: #00afef;
 }
 
 /* ====================================
@@ -226,7 +283,7 @@ li {
 
 #design-selection ul{
   margin: 0 auto;
-  border: 1px dashed black;
+  /*border: 1px dashed black;*/
   width:90%;
   display: flex;
   flex-flow: row wrap;
