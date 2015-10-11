@@ -129,6 +129,7 @@ h3 {
 
 a {
   text-decoration: none;
+  font-size: 18px;
 }
 p {
   /*padding: 0 40px 40px 40px;*/
@@ -377,7 +378,9 @@ li:hover a.designer-name {
 p a{
   transition: all 0.2s;
   position: relative;
-  color: #ff3296;
+  /*color: #ff3296;*/
+  color: #D65092;
+  /*color:#66CCFF;*/
 }
 
 p a:after, p a:after{
@@ -388,12 +391,14 @@ p a:after, p a:after{
   width: 0px;
   height: 2px;
   background-color: #98004a;
+  /*background-color: #01aff0;*/
   content:"";
   transition: width 0.2s;
 }
 
 p a:hover, p a:hover{
   color: #98004a;
+  /*color: #01aff0;*/
 }
 
 p a:hover:after, p a:hover:after{
