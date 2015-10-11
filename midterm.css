@@ -49,8 +49,8 @@ header h2 {
   width:100%;
   height: 200px;
   text-align: center;
-  background-image: url("background.jpg");
-  background-position: 50% 80%;
+  background-image: url("back3.jpg");
+  background-position: 0 200%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -69,6 +69,7 @@ header h2 {
 }
 #zen-summary p{
   color: #fff;
+
 }
 #zen-summary::after{
   /*border: 1px solid black;*/
@@ -83,6 +84,21 @@ header h2 {
   /*background-color: skyblue;*/
   position:relative;
   z-index: 1;
+  /*transition: height 5.0s;*/
+}
+
+#zen-preamble p{
+  height:0;
+  overflow: hidden; /*so the p's dont go on top of one another*/
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1.0s, opacity 0.5s linear;
+}
+
+#zen-preamble:hover p{
+  height: auto;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* ====================================
