@@ -248,6 +248,8 @@ div.wrapper {
     /*left:10%;*/
   }
 
+/*How come I cant move the bottom left anymore?*/
+
   #zen-resources{
     background-color: #2b2b2b;
     flex-basis: 50%;
@@ -264,7 +266,7 @@ div.wrapper {
     text-align: left;
     /*border: 1px solid white;*/
     /*position: relative;*/
-    /*right:20%;*/
+    /*right:30%;*/
   }
 }
 
@@ -412,6 +414,8 @@ li:hover a.designer-name {
   }
 }
 
+/*How come if I try to align it left and right it doesnt work well?*/
+
 @media all and (min-width:1080px){
   /*Putting space from the top to the words*/
   a.design-name::before, a.designer-name::before{
@@ -438,6 +442,8 @@ li:hover a.designer-name {
 /* ====================================
         HOVERING OVER LINKS
 ==================================== */
+
+/*Is it possible to have this effect work if the text wraps around*/
 p a{
   transition: all 0.2s;
   position: relative;
